@@ -1,0 +1,224 @@
+
+
+
+body {
+   
+  background-color: #edf0f1;
+}
+.ab-nav {
+  color: #414040;
+  font-size: 40px;
+  font-family: "Reggae One", cursive;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 5px;
+  position: relative;
+  top: 20px;
+  right: 80px;
+}
+.logo {
+  margin: 5px;
+  margin-left: 30px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  float: left;
+}
+/* code for navigation bar starts */
+.nav-bar {
+  background: #494949;
+  text-align: right;
+  height: 75px;
+  width: 100%;
+  align-items: center;
+  position: absolute;
+  top: 125px;
+}
+.nav-bar ul {
+  display: inline-block;
+  list-style: none;
+  margin-right: 150px;
+}
+.nav-bar ul li {
+  text-align: center;
+  float: left;
+  width: 150px;
+  margin: 10px;
+  margin-right: 110px;
+  padding: 15px;
+  border-radius: 5px;
+}
+.nav-bar ul li a {
+  text-decoration: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.home,
+.nav-bar ul li:hover {
+  background: yellow;
+  border-radius: 3px;
+  color: #414040;
+}
+.nav-bar .home a,
+.nav-bar ul li a:hover {
+  color: #414040;
+}
+.nav-bar .fa {
+  margin-right: 3px;
+  font-size: 20px;
+}
+
+
+
+
+
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  padding: 40px 0;
+  
+
+}
+
+
+.container .card{
+  position: relative;
+  min-width: 320px;
+  height: 440px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+              inset -5px -5px 5px rgba(225,225,225,0.5),
+              -5px -5px 5px rgba(0,0,0,0.05),
+              -5px -5px 5px rgba(225,225,225,0.5);
+ border-radius: 15px;
+ margin: 30px;
+
+
+}
+.container .card .box
+{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #ebf5fc;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+border-radius: 15px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+.container .card:hover .box {
+  transform: translateX(30px);
+  transition: 0.5s;
+
+}
+
+.container .card .box .content{
+  padding: 20px;
+  text-align: justify;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+}
+.container .card .box .content a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+#img{
+  height: 200px;
+  width: 200px;
+  padding-left: 50px;
+  padding-top: 20px;
+}
+.container .card .box .content h2{
+
+  position: absolute;
+top: -10px;
+right: 30px;
+font-size: 1cm;
+color: rgba(0, 0, 0, 0.05);
+transition: 0.5s;
+                                pointer-events: none;
+                                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.container .card:hover .box .content h2{
+  color: rgba(0,0,0,0.2);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container .card:hover .box .content h3{
+  transition: 0.25s;
+font-size: 1cm;
+color:  #bd5d3f;
+z-index: 0.5;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container .card:hover .box .content p{
+  font-size: o.75cm;
+ font-weight: 300;
+color: rgb(116, 110, 110);
+z-index: 0.5;
+zoom: 1;
+font-family: sans-serif;
+
+
+}
+.container .card:hover .box .content a {
+  display: inline-block;
+  background: #bd5d3f;
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-top: 10px;
+  color: #fff;
+
+}
+.head1{
+text-align: center;
+font-size: 30px;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+.head2{
+  text-align: center;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  
+  }
+  .para1{
+   font-size: 20px;
+   padding-left: 250px;
+   padding-right: 250px;
+
+  }
+  .para2{
+    font-size: 20px;
+    padding-left: 250px;
+    padding-right: 250px;
+ 
+   }
+
+   .para3{
+    font-size: 20px;
+    padding-left: 250px;
+    padding-right: 250px;
+ 
+   }
+   .info{
+    padding-left: 950px;
+
+   }
+   .info2{
+     font-size: medium;
+   }
+ 

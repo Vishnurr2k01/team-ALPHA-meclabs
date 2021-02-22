@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Reggae+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -13,20 +14,19 @@ body {
   height: 100vh; */
 }
 .ab-nav {
+  position: relative;
+  left: calc(50% - 250px);
   color: #414040;
   font-size: 40px;
   font-family: "Reggae One", cursive;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   margin-top: 5px;
-  position: relative;
-  top: 20px;
-  right: 80px;
 }
 .logo {
-  margin: 5px;
-  margin-left: 30px;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-bottom: 10px;
+  margin-left: 10px;
   height: 100px;
   width: 100px;
   border-radius: 50%;
@@ -39,8 +39,7 @@ body {
   height: 75px;
   width: 100%;
   align-items: center;
-  position: absolute;
-  top: 125px;
+  clear: left;
 }
 .nav-bar ul {
   display: inline-block;
@@ -98,15 +97,28 @@ body {
   background-repeat: no-repeat;
 }
 /* slide show starts */
+.slider-heading {
+  text-align: center;
+  margin-top: 600px;
+  clear: both;
+  background: #cecbcb;
+  outline: 3px solid rgb(66, 66, 66);
+  outline-offset: 10px;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #414040;
+}
 .slider {
-  position: absolute;
-  top: 2000px;
-  right: 50%;
+  position: relative;
+  top: 150px;
+  left: 50%;
   width: 800px;
   height: 500px;
   border-radius: 10px;
   overflow: hidden;
-  transform: translateX(50%);
+  transform: translateX(-50%);
 }
 .slides {
   width: 500%;
@@ -184,15 +196,8 @@ body {
 }
 /* code for automatic transiton ends*/
 /* code for slideshow ends */
-.slider-heading {
-  text-align: center;
-  clear: left;
-  float: left;
-  margin-top: 50px;
-  margin-left: 30px;
-  font-family: "Reggae One", cursive;
-  color: #414040;
-}
+
+/* box starts */
 .box1 {
   border-radius: 35px;
   background: linear-gradient(145deg, #cecbcb, #ffffff);
@@ -229,8 +234,123 @@ body {
   align-items: center;
   justify-content: center;
 }
-.rough {
-  position: absolute;
-  top: 3000px;
-  color: #40d3dc;
+/* box ends */
+/* footer starts */
+footer {
+  position: relative;
+  top: 1000px;
+  width: 100%;
+  height: auto;
+  padding: 50px 100px;
+  background: #111;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+footer .container .sec {
+  margin-right: 30px;
+}
+footer .container .sec.aboutus {
+  width: 40%;
+}
+footer .container h2 {
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+footer .container h2::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background: #f00;
+}
+footer p {
+  color: #999;
+}
+.sci {
+  margin-top: 20px;
+  display: flex;
+}
+.sci li {
+  list-style: none;
+}
+.sci li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.sci li a:hover {
+  background: #f00;
+}
+.sci li a .fa {
+  color: #fff;
+  font-size: 20px;
+}
+.quickLink {
+  position: relative;
+  width: 25%;
+}
+.quickLink ul li {
+  list-style: none;
+}
+.quickLink ul li a {
+  color: #999;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.quickLink ul li a:hover {
+  color: #fff;
+}
+.contact {
+  width: calc(35% - 60px);
+  margin-right: 0 !important;
+}
+.contact .info {
+  position: relative;
+}
+.contact .info li {
+  display: flex;
+  margin-bottom: 16px;
+}
+.contact .info li span:nth-child(1) {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.contact .info li span {
+  color: #999;
+}
+.contact .info li a {
+  color: #999;
+  text-decoration: none;
+}
+.contact .info li a:hover {
+  color: #fff;
+}
+
+.copyrightText {
+  width: 100%;
+  background: #181818;
+  padding: 8px 100px;
+  text-align: center;
+  color: #999;
+}
+/* footer ends */

@@ -12,66 +12,137 @@
     <link rel="stylesheet" href="../css/homepage.css">
 </head>
 <body>
+
+
+
+    <!-- header starts -->
     <div class="logo">
         <img src="../Images/logo.jpeg" alt="" class="logo">
     </div>
     <div class="ab-nav">enter your text</div>
+    <!-- nav bar starts -->
     <div class="nav-bar">
         <ul>
-            <li class="home"><i class="fa fa-home" aria-hidden="true"></i><a href="homepage.html">Home</a></li>
-            <li class="clubs"><i class="fa fa-users" aria-hidden="true"></i><a href="clubs.html">Clubs</a></li>
+            <li class="home"><i class="fa fa-home" aria-hidden="true"></i><a href="#">Home</a></li>
+            <li class="clubs"><i class="fa fa-users" aria-hidden="true"></i><a href="#">Clubs</a></li>
             <li class="Events"><i class="fa fa-calendar" aria-hidden="true"></i><a href="#">Events</a></li>
-            <li class="about"><i class="fa fa-book" aria-hidden="true"></i><a href="https://www.mec.ac.in/">About Us</a></li>
+            <li class="about"><i class="fa fa-book" aria-hidden="true"></i><a href="#">About</a></li>
         </ul>
-        <div class="front-image">ENTER YOUR TEXT HERE</div>
-        <div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, similique doloremque? Voluptatem perspiciatis atque, ipsam harum fuga repellendus illo voluptatibus.</div>
-        <div class="box2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis non tempora ipsam porro vel corporis sint eum nesciunt iusto! Ipsam?</div>
-        <h1 class="slider-heading">enter your text here</h1>
-        <div class="slider">
-            <div class="slides">
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                <input type="radio" name="radio-btn" id="radio4">
-                <div class="slide first">
-                    <img src="../Images/trail1.jpg" alt="s1">
-                </div>
-                <div class="slide">
-                    <img src="../Images/trail2.jpg" alt="s2">
-                </div>
-                <div class="slide">
-                    <img src="../Images/trail3.jpg" alt="s3">
-                </div>
-                <div class="slide">
-                    <img src="../Images/trail4.jpg" alt="s4">
-                </div>
+    </div>
+    <!-- nav bar ends -->
+    <!-- header ends -->
+
+
+    <!-- image starts -->
+    <div class="front-image">ENTER YOUR TEXT HERE</div>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <!-- image ends -->
+
+
+    <!-- slider starts -->
+    <h1 class="slider-heading">UPCOMING EVENTS</h1>
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <div class="slide first">
+                <img src="../Images/slide1.jpeg" alt="s1">
             </div>
-            <div class="navigation-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-                <div class="auto-btn4"></div>
+            <div class="slide">
+                <img src="../Images/slide2.jpeg" alt="s2">
             </div>
-            <div class="navigation-manual">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-                <label for="radio4" class="manual-btn"></label>
+            <div class="slide">
+                <img src="../Images/slide3.jpeg" alt="s3">
             </div>
+            <div class="slide">
+                <img src="../Images/slide4.jpeg" alt="s4">
+            </div>
+        </div>
+        <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+        </div>
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
         </div>
     </div>
     <script type="text/javascript">
-    var counter = 1;
-    setInterval(function(){
-        document.getElementById('radio'+counter).checked = true;
-        counter++;
-        if(counter>4){
-            counter = 1
-        }
-    },5000)
+        var counter = 1;
+        setInterval(function () {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 4) {
+                counter = 1
+            }
+        }, 5000)
     </script>
-    <div class="rough">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore error quaerat, nemo unde ab consectetur ipsam! Sed delectus provident odit, ipsa odio labore, consequatur facere ratione nisi suscipit veniam laudantium.</p>
-    </div>
+    <!-- slider ends -->
+
+
+
+    <!-- footer starts -->
+    <footer>
+        <div class="container">
+            <div class="sec aboutus">
+                <h2>About us</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis possimus, sunt natus ducimus
+                    provident numquam necessitatibus nemo deserunt iure eius!</p>
+                <ul class="sci">
+                    <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="sec quickLink">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="sec contact">
+                <h2>Contact Info</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span>647 Linda street <br>
+                            Paris, PA19460,<br>France</span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <p><a href="tel:12345678900">+1 234 567 8900</a><br>
+                            <a href="tel:12345678900">+1 234 567 8900</a>
+                        </p>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <p><a href="mailto:eventmanage@gmail.com">eventmanage@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyrightText">
+            <p>Copyright © . All rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- footer ends -->
+
+
+
+
 </body>
+
 </html>

@@ -1,4 +1,3 @@
-firebase.database.enableLogging(true);
 function myFunction() {
   document.location.href = '../html/homepage.html';
   }

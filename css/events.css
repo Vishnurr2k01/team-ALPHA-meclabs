@@ -1,0 +1,122 @@
+.event-container {
+    font-family: "Roboto", sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .event-container h3.year {
+    font-size: 40px;
+    text-align: center;
+    border-bottom: 1px solid #b1b1b1;
+  }
+  
+  .event-container .event {
+    box-shadow: 0 8px 22px -12px rgba(0, 0, 0, 0.4);
+    display: flex;
+    border-radius: 8px;
+    margin: 50px 0;
+    
+  }
+  
+  .event .event-left {
+   
+    min-width: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+    padding: 0;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px 0 0 8px;
+  }
+  
+  .event .event-left .date {
+    font-size: 56px;
+  }
+  
+  .event .event-left .month {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .event .event-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 24px;
+  }
+  
+  .event .event-right h3.event-title {
+    font-size: 32px;
+    margin: 24px 0 10px 0;
+    color: #218bbb;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: underline;
+  }
+  
+  .event .event-right .event-timing {
+    background: #fff8ba;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    padding: 8px;
+    border-radius: 16px;
+    margin: 24px 0;
+    font-size: 14px;
+  }
+  
+  .event .event-right .event-timing img {
+    height: 20px;
+    padding-right: 8px;
+  }
+  .reg{
+      display: flex;
+      width: 600px;
+  }
+  form{
+      padding-left: 200px;
+      padding-bottom: 20px;
+     
+    
+      
+  }
+  #imgbox{
+    height: 300px;
+    width: 250px;
+
+  }
+  .button{
+      height: 40px;
+    width: 120px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: #2560cf;
+    color: white;
+    text-align: center;
+    font-size: large;
+  }
+  
+  @media (max-width: 550px) {
+    .event {
+      flex-direction: column;
+    }
+  
+    .event .event-left {
+      padding: 0;
+      border-radius: 8px 8px 0 0;
+    }
+  
+    .event .event-left .event-date .date,
+    .event .event-left .event-date .month {
+      display: inline-block;
+      font-size: 24px;
+    }
+  
+    .event .event-left .event-date {
+      padding: 10px 0;
+    }
+  }

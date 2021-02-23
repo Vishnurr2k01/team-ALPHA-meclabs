@@ -10,12 +10,10 @@ body {
   font-family: sans-serif;
   align-items: center;
   justify-content: center;
-  /* display: flex;
-  height: 100vh; */
 }
 .ab-nav {
   position: relative;
-  left: calc(50% - 250px);
+  margin-left: 603px;
   color: #414040;
   font-size: 40px;
   font-family: "Reggae One", cursive;

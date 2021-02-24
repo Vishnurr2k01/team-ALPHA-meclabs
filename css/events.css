@@ -2,6 +2,7 @@
     font-family: "Roboto", sans-serif;
     max-width: 800px;
     margin: 0 auto;
+    transition: 0.5s;
   }
   
   .event-container h3.year {
@@ -54,6 +55,23 @@
     text-transform: uppercase;
     text-align: center;
     text-decoration: underline;
+  }
+  .event-right .event-description p{
+    display: none;
+    font-family: "Roboto",sans-serif;
+    font-size: 16px;
+    padding-left: 20px;
+    
+    transition: 0.25s;
+  }
+  .event-right:hover{
+    height: 500px;
+    width: auto;
+  }
+  .event-right:hover .event-description p{
+    display: block;
+   padding-left: 100px;
+    font-size: 18px;
   }
   
   .event .event-right .event-timing {

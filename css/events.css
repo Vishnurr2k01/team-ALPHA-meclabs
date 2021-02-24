@@ -1,4 +1,75 @@
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffffff;
+  font-family: sans-serif;
+  align-items: center;
+  justify-content: center;
+}
+.name {
+  margin-left: calc(50% - 110px);
+  transform: translateX(-50%);
+  width: 300px;
+  height: 75px;
+  margin-top: 20px;
+}
+.logo {
+  margin-bottom: 10px;
+  margin-left: 10px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  float: left;
+}
+/* code for navigation bar starts */
+.nav-bar {
+  background: linear-gradient(to bottom, #315f8a, #103053);
+  text-align: right;
+  height: 75px;
+  width: 100%;
+  align-items: center;
+  clear: left;
+}
+.nav-bar ul {
+  display: inline-block;
+  list-style: none;
+  margin-right: 150px;
+}
+.nav-bar ul li {
+  text-align: center;
+  float: left;
+  width: 150px;
+  margin: 10px;
+  margin-right: 110px;
+  padding: 15px;
+  border-radius: 5px;
+  color: white;
+}
+.nav-bar ul li a {
+  text-decoration: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.events,
+.nav-bar ul li:hover {
+  background: linear-gradient(to bottom, rgb(30, 117, 194), rgb(15, 67, 112));
+  border-radius: 3px;
+  color: rgb(255, 255, 255);
+}
+.nav-bar .events,
+.nav-bar .events a,
+.nav-bar ul li:hover a {
+  color: rgb(255, 255, 255);
+}
+.nav-bar .fa {
+  margin-right: 3px;
+  font-size: 20px;
+}
 .event-container {
   font-family: "Roboto", sans-serif;
   max-width: 800px;
@@ -84,10 +155,8 @@
   font-size: 14px;
 }
 .event-right:hover .button {
-  position: relative;
-  left: 50%;
   padding: 8px;
-  transform: translateX(-50%);
+  margin: 10px;
 }
 .reg {
   display: flex;
@@ -134,5 +203,3 @@ form {
     padding: 10px 0;
   }
 }
-
-

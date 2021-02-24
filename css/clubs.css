@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Reggae+One&display=swap");
 body {
-  background-color: #edf0f1;
+  background-color: #ffffff;
   font-family: sans-serif;
   align-items: center;
   justify-content: center;
@@ -10,13 +10,12 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
-.ab-nav {
-  position: relative;
-  left: calc(50% - 250px);
-  color: #414040;
-  font-size: 40px;
-  font-family: "Reggae One", cursive;
-  margin-top: 5px;
+.name {
+  margin-left: calc(50% - 110px);
+  transform: translateX(-50%);
+  width: 300px;
+  height: 75px;
+  margin-top: 20px;
 }
 .logo {
   position: relative;
@@ -30,7 +29,7 @@ body {
   float: left;
 }
 .nav-bar {
-  background: #494949;
+  background: linear-gradient(to bottom, #315f8a, #103053);
   text-align: right;
   height: 75px;
   width: 100%;
@@ -50,6 +49,7 @@ body {
   margin-right: 110px;
   padding: 15px;
   border-radius: 5px;
+  color: white;
 }
 .nav-bar ul li a {
   text-decoration: none;
@@ -60,13 +60,14 @@ body {
 }
 .clubs,
 .nav-bar ul li:hover {
-  background: yellow;
+  background: linear-gradient(to bottom, rgb(30, 117, 194), rgb(15, 67, 112));
   border-radius: 3px;
-  color: #414040;
+  color: rgb(255, 255, 255);
 }
+.nav-bar .clubs,
 .nav-bar .clubs a,
-.nav-bar ul li a:hover {
-  color: #414040;
+.nav-bar ul li:hover a {
+  color: rgb(255, 255, 255);
 }
 .nav-bar .fa {
   margin-right: 3px;

@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Reggae+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -11,18 +12,14 @@ body {
   align-items: center;
   justify-content: center;
 }
-.ab-nav {
-  position: relative;
-  margin-left: 603px;
-  color: #414040;
-  font-size: 40px;
-  font-family: "Reggae One", cursive;
-  margin-top: 5px;
+.name {
+  margin-left: calc(50% - 110px);
+  transform: translateX(-50%);
+  width: 300px;
+  height: 75px;
+  margin-top: 20px;
 }
 .logo {
-  position: relative;
-  top: 0;
-  left: 0;
   margin-bottom: 10px;
   margin-left: 10px;
   height: 100px;
@@ -32,7 +29,7 @@ body {
 }
 /* code for navigation bar starts */
 .nav-bar {
-  background: linear-gradient(to bottom, #03254c, #0962c9);
+  background: linear-gradient(to bottom, #315f8a, #103053);
   text-align: right;
   height: 75px;
   width: 100%;
@@ -63,18 +60,14 @@ body {
 }
 .home,
 .nav-bar ul li:hover {
-  background: linear-gradient(
-    to right,
-    rgba(47, 158, 255, 0.8),
-    rgba(25, 237, 248, 0.8)
-  );
+  background: linear-gradient(to bottom, rgb(30, 117, 194), rgb(15, 67, 112));
   border-radius: 3px;
-  color: #03254c;
+  color: rgb(255, 255, 255);
 }
 .nav-bar .home,
 .nav-bar .home a,
 .nav-bar ul li:hover a {
-  color: #03254c;
+  color: rgb(255, 255, 255);
 }
 .nav-bar .fa {
   margin-right: 3px;
@@ -86,7 +79,7 @@ body {
   color: white;
   font-weight: 900;
   font-size: 60px;
-  font-family: "Lato,Roboto,inter,open sans,Montessarat";
+  font-family: "Cinzel Decorative", cursive;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -223,11 +216,12 @@ img {
   width: 100%;
 }
 .blog-post {
+  box-shadow: 35px 35px 70px #7b7b7b, -35px -35px 70px #ffffff;
   margin-top: 75px;
   width: 100%;
   max-width: 98rem;
   padding: 5rem;
-  background-color: rgb(191, 230, 255);
+  background-color: rgb(210, 255, 253);
   box-sizing: 0 1.4rem 8rem rgba(0, 0, 0.2);
   display: flex;
   align-items: center;
@@ -242,24 +236,12 @@ img {
 }
 .blog-post_img img {
   width: 100%;
-  height: 100%;
+  height: 250%;
+  position: relative;
+  top: -75%;
+  left: 10%;
   object-fit: cover;
   display: block;
-  border-radius: 0.8rem;
-}
-.blog-post_img::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: linear-gradient(
-    to right,
-    rgba(79, 172, 254, 0.8),
-    rgba(0, 242, 254, 0.8)
-  );
-  box-shadow: 0.5rem 0.5rem 3rem 1px rgba(0, 0, 0, 0.05);
   border-radius: 0.8rem;
 }
 .blog-post_date span {
@@ -273,26 +255,31 @@ img {
   font-size: 2.5rem;
   margin: 1.5rem 0.2rem;
   text-transform: uppercase;
-  color: #4facfe;
+  color: #0088ff;
 }
 .blog-post_text {
   margin-bottom: 3rem;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
 }
 .blog-post_cta {
   display: inline-block;
-  padding: 1.5rem 3rem;
+  padding: 1rem 2rem;
   letter-spacing: 1px;
   text-transform: uppercase;
   font-size: 1.2rem;
   color: #fff;
-  background-image: linear-gradient(to right, #4facfe 0%, #00fefe 100%);
+  background: linear-gradient(#103053, #216cbd);
   border-radius: 0.8rem;
   text-decoration: none;
   margin-bottom: 30px;
 }
 .blog-post_cta:hover {
-  background-image: linear-gradient(to right, #00fefe 0%, #4facfe 100%);
+  background-image: linear-gradient(to top, #103053, #216cbd);
+}
+.blog-post .blog-post_info .blog-post_date {
+  margin-top: 20px;
 }
 hr {
   size: 3px;

@@ -2,7 +2,6 @@
   font-family: "Roboto", sans-serif;
   max-width: 800px;
   margin: 0 auto;
-  transition: 0.5s;
 }
 
 .event-container h3.year {
@@ -29,21 +28,12 @@
   text-align: center;
   border-radius: 8px 0 0 8px;
 }
-
-.event .event-left .date {
-  font-size: 56px;
-}
-
-.event .event-left .month {
-  font-size: 16px;
-  font-weight: normal;
-}
-
 .event .event-right {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0 24px;
+  transition: 0.75s;
 }
 
 .event .event-right h3.event-title {
@@ -53,14 +43,22 @@
   text-transform: uppercase;
   text-align: center;
   text-decoration: underline;
+  transition: 0.75s;
 }
 .event-right .event-description p {
   display: none;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   padding-left: 20px;
-
-  transition: 0.25s;
+  transition: 0.75s;
+}
+.event .event-right .event-timing {
+  background-color: #fff8ba;
+  display: block;
+  width: 250px;
+  padding-left: 45px;
+  border-radius: 10px;
+  transition: 0.75s;
 }
 .event-right:hover {
   height: 500px;
@@ -70,13 +68,6 @@
   display: block;
   padding-left: 100px;
   font-size: 18px;
-}
-.event .event-right .event-timing {
-  background-color: #fff8ba;
-  display: block;
-  width: 250px;
-  padding-left: 45px;
-  border-radius: 10px;
 }
 .event-right:hover .event-timing {
   position: relative;
@@ -91,10 +82,11 @@
   margin: 24px 0;
   font-size: 14px;
 }
-
-.event .event-right .event-timing img {
-  height: 20px;
-  padding-right: 8px;
+.event-right:hover .button {
+  position: relative;
+  left: 50%;
+  padding: 8px;
+  transform: translateX(-50%);
 }
 .reg {
   display: flex;
@@ -112,7 +104,7 @@ form {
 .button {
   height: 40px;
   width: 120px;
-  border-radius: 20px;
+  border-radius: 10px;
   border: none;
   outline: none;
   background-color: #2560cf;

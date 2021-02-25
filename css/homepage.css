@@ -16,8 +16,9 @@ body {
   margin-left: calc(50% - 110px);
   transform: translateX(-50%);
   width: 300px;
-  height: 75px;
+  height: 100px;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 .logo {
   margin-bottom: 10px;

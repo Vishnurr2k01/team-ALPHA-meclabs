@@ -201,89 +201,120 @@ body {
 /* code for slideshow ends */
 
 /* box starts */
-.external-events {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  text-align: center;
+section {
   margin-top: 200px;
-  padding: 20px;
-  font-size: 60px;
-  font-weight: bold;
-  color: #03254c;
-  text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -2px 4px 1px #767474,
-    -3px 6px 1px #787777, -4px 8px 1px #aaaaaa;
-}
-img {
   width: 100%;
+  height: 100vh;
+  background: url("../Images/pexels-element-digital-1370296.jpg");
+  background-size: cover;
 }
-.blog-post {
-  box-shadow: 35px 35px 70px #7b7b7b, -35px -35px 70px #ffffff;
-  margin-top: 75px;
-  width: 100%;
-  max-width: 98rem;
-  padding: 5rem;
-  background-color: rgb(210, 255, 253);
-  box-sizing: 0 1.4rem 8rem rgba(0, 0, 0.2);
-  display: flex;
-  align-items: center;
-  border-radius: 0.8rem;
+section .leftbox {
+  width: 40%;
+  height: 100%;
+  float: left;
+  padding: 50px;
+  box-sizing: border-box;
 }
-.blog-post_img {
-  min-width: 35rem;
-  max-width: 35rem;
-  height: 30rem;
-  transform: translateX(-8rem);
-  position: relative;
-}
-.blog-post_img img {
-  width: 100%;
-  height: 250%;
-  position: relative;
-  top: -75%;
-  left: 10%;
-  object-fit: cover;
-  display: block;
-  border-radius: 0.8rem;
-}
-.blog-post_date span {
-  display: block;
-  color: rgba(0, 0, 0.5);
-  font-size: 1.6rem;
-  font-weight: 600;
-  margin: 0.5rem 0;
-}
-.blog-post_title {
-  font-size: 2.5rem;
-  margin: 1.5rem 0.2rem;
-  text-transform: uppercase;
-  color: #0088ff;
-}
-.blog-post_text {
-  margin-bottom: 3rem;
-  font-size: 1.2rem;
-  font-family: "Roboto", sans-serif;
-  text-align: justify;
-}
-.blog-post_cta {
-  display: inline-block;
-  padding: 1rem 2rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-size: 1.2rem;
+section .leftbox .content {
   color: #fff;
-  background: linear-gradient(#103053, #216cbd);
-  border-radius: 0.8rem;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  transition: 0.5s;
+}
+section .leftbox .content:hover {
+  background: #e91e63;
+}
+section .leftbox .content h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+section .events {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  float: right;
+  box-sizing: border-box;
+}
+section .events ul {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0;
+  padding: 40px;
+  box-sizing: border-box;
+}
+section .events ul li {
+  list-style: none;
+  background: #fff;
+  box-sizing: border-box;
+  height: 200px;
+  margin: 15px 0;
+}
+section .events ul li .time {
+  position: relative;
+  padding: 20px;
+  background: #262626;
+  box-sizing: border-box;
+  width: 30%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  transition: 0.5s;
+}
+section .events ul li:hover .time {
+  background: #e91e63;
+}
+section .events ul li .time h2 {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 60px;
+  line-height: 30px;
+}
+section .events ul li .time h2 span {
+  font-size: 30px;
+}
+section .events ul li .details {
+  padding: 20px;
+  background: #fff;
+  box-sizing: border-box;
+  width: 70%;
+  height: 100%;
+  float: left;
+}
+section .events ul li .details h3 {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+}
+section .events ul li .details p {
+  position: relative;
+  margin: 10px 0;
+  padding: 0;
+  font-size: 16px;
+}
+section .events ul li .details a {
+  display: inline-block;
   text-decoration: none;
-  margin-bottom: 30px;
+  padding: 10px 15px;
+  border: 2px solid #262626;
+  margin-top: 15px;
+  font-size: 18px;
+  transition: 0.5%;
+  font-weight: bold;
 }
-.blog-post_cta:hover {
-  background-image: linear-gradient(to top, #103053, #216cbd);
-}
-.blog-post .blog-post_info .blog-post_date {
-  margin-top: 20px;
-}
-hr {
-  size: 3px;
-  color: red;
+section .events ul li .details a:hover {
+  background: #e91e63;
+  color: #fff;
+  border-color: #e91e63;
 }
 /* box ends */
 /* footer starts */

@@ -117,8 +117,10 @@ body {
   text-decoration: underline;
   transition: 0.75s;
 }
+
 .event-right .event-description p {
   display: none;
+  
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   padding-left: 20px;
@@ -130,12 +132,13 @@ body {
   width: 250px;
   padding-left: 45px;
   border-radius: 10px;
-  transition: 0.75s;
+  transition: 0.25s;
 }
 .event-right:hover {
   height: 500px;
   width: auto;
 }
+
 .event-right:hover .event-description p {
   display: block;
   padding-left: 100px;

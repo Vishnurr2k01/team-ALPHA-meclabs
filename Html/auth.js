@@ -1,5 +1,5 @@
 function myFunction() {
-  document.location.href = 'html/homepage.html';
+  document.location.href = 'Html/homepage.html';
   }
   const setupUI = (user) => {
     if (user) {

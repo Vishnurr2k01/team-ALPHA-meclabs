@@ -12,7 +12,7 @@ function myFunction() {
   loginForm.addEventListener('submit', (e) => {
     e.preventDefault();
     
-    // get user info
+    // get user information
     const email = loginForm['login-email'].value;
     const password = loginForm['login-password'].value;
   
@@ -20,28 +20,14 @@ function myFunction() {
     firebase.auth().signInWithEmailAndPassword(email, password).then((cred) => {
       myFunction();
       
-    });
-    firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+    }).catch(function(error) {
       var errorCode = error.code;
       var errorMessage = error.message;
   
       // User not found? Create user.
       if ( errorCode === 'auth/user-not-found' ) {
-          firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
-              // Handle Errors here.
-              var errorCode = error.code;
-              var errorMessage = error.message;
-              if ( errorCode == 'email-already-in-use' ) {
-                  alert('You already have an account with that email.');
-              } else if ( errorCode == 'auth/invalid-email' ) {
-                  alert('Please provide a valid email');
-              } else if ( errorCode == 'auth/weak-password' ) {
-                  alert('The password is too weak.');
-              } else {
-                  alert(errorMessage);
-              }
-              console.log(error);
-          });
+          alert('User not found');
+    
       // Wrong Password Error
       } else if ( errorCode === 'auth/wrong-password' ) {
           

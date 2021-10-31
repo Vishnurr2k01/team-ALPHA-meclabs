@@ -132,11 +132,11 @@ body {
   width: 250px;
   padding-left: 45px;
   border-radius: 10px;
-  transition: 0.25s;
+  transition: 0.35s;
 }
 .event-right:hover {
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .event-right:hover .event-description p {
@@ -151,7 +151,7 @@ body {
   display: block;
   align-items: center;
   justify-content: center;
-  width: 200px;
+ 
   padding-left: 25px;
   border-radius: 16px;
   margin: 24px 0;

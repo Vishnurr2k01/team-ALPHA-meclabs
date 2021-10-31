@@ -135,8 +135,8 @@ body {
   transition: 0.25s;
 }
 .event-right:hover {
-  height: 500px;
-  width: auto;
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .event-right:hover .event-description p {
